@@ -1,0 +1,174 @@
+/*Adit Chawla, 200531948, Assignment 2, CMPG
+/*Start of Code*/
+
+body{
+    background-image: url(/Images/BgImage.jpg); /*Using a background image*/
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{  
+    padding-right: 0%;
+    padding-top: 0%;
+}
+
+.TopBar{ /*Navigation menu styling*/
+    width: 75%;
+    display: flex;
+    margin-left: 165px;
+    word-spacing: 13em;
+    position: absolute;
+    top: 6%;
+}
+
+.TopBar > ul > li{ 
+    display: inline;
+    font-weight: bolder;
+    font-size:1.9em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.TopBar > ul > li > a{ /*To remove underline from the links in nav menu*/
+    text-decoration: dashed;
+}
+
+a{
+    color: #007bff;
+}
+
+/*To get that click effect*/
+a:hover{
+    color: purple;
+}
+
+a:active{
+    opacity: 0.8;
+}
+/*Click effect achieved*/
+
+.student-info {
+    color: #007bff; /* Or any color that matches your website's theme */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+
+.type{ /*Styling of type section*/
+    position: absolute;
+    margin-top: 4.7%;
+    font-weight: bold;
+    font-size:larger;
+    color: aliceblue;
+}
+
+.type > label{
+    font-size: x-large;
+}
+
+.type > option{
+    font-size: large;
+}
+
+.size{ /*Styling of size section*/
+    color: aliceblue;
+    margin-left: 29%;
+    font-weight: bold;
+    font-size: large;
+    /* position: absolute; */
+    top: 25.6%;
+}
+
+.size > p{
+    font-size:larger;
+}
+
+.size > input{
+    margin-left: 30px;
+}
+
+.toppings{ /*Styling of toppings section*/
+    /* position:relative; */
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-top: -150px;
+}
+
+.toppings > p{
+    font-size: larger;
+}
+
+.toppings > input{
+    margin-left: 70px;
+}
+
+.Delivery{ /*Styling of delivery section*/
+    color: aliceblue;
+    font-size:medium;
+    font-weight: bold;
+    margin-top: 9%;
+}
+
+.name{ /*space between name and address */
+    margin-bottom: 4%;
+}
+
+.address > p{
+    font-size: large;
+}
+
+.address{ /*space between address and instructions*/
+    margin-bottom: 4.5%;
+}
+
+.instructions > p{
+    font-size: large;
+}
+
+.instructions{ /*Space between instructions and e-mail*/
+    margin-bottom: 4.5%;
+}
+
+.email{ 
+    font-size: medium;
+    font-weight: 700;
+    color: aliceblue;
+    margin-bottom: 2%;
+}
+
+.order-description {
+    color: #333333; /* Darker color for better readability */
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em; /* Slightly larger text */
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds depth with a shadow */
+    max-width: 60%; /* Ensures it doesn't stretch too wide on larger screens */
+    /* margin-left: auto; Centers the box */
+    /* margin-right: auto; */
+}
+
+#orderButton {
+    background-color: #007bff; /* Or any color that matches your website's theme */
+    color: white;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+#orderButton:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+footer{ /*Spacing between links in footer*/
+    word-spacing: 0.8em;
+}
+/*End of Code*/

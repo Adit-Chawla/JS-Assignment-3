@@ -1,0 +1,121 @@
+<!--Adit Chawla, 200531948, Assignment 3, CMPG-->
+<!--Start Of Code-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a webpage for Pizzas.com"> <!--Description of our webpage-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex,nofollow"> <!--Tells the search engines to not index our webpage-->
+        <title>Pizzas.com</title>
+        <link rel="stylesheet" href="./css/pizza-styles.css"> <!--Linking the css stylesheet-->
+        <script src="./js/pizza-script.js" defer></script>
+    </head>
+
+    <body>
+      <div class="header">  <!--Header starts here-->
+        <header>
+
+            <div class="logo"> <!--Logo of our webpage-->
+                <img src="./Images/Logo.jpg" alt="Website Logo"> <!--Source of logo file with description-->
+            </div>
+
+            <nav class="TopBar"> <!--Creating a navigation menu-->
+                <ul>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">NUTRITION</a></li>
+                    <li><a href="#">LOCATIONS</a></li>
+                </ul>
+            </nav>
+
+        </header> <!--Header ends here-->
+      </div>
+        <form action="#" method="POST" enctype="multipart/form-data"> <!--Creating a form to store user input--> 
+
+            <div class="type"> <!--Creating a division for type of pizzas-->
+
+                <label for="Pizzas">Select Your Pizza: </label> <!--Creating a dropdown menu-->
+                <select name="Pizzas" id="Pizzas">
+                    <option value="extra cheese">Extra Cheese</option> 
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="bacon and beef">Bacon And Beef</option>
+                    <option value="stuffed crust">Stuffed Crust</option>
+                </select>
+            </div>
+    
+            <div class="size"> <!--Creating a division for pizza sizes-->
+                <p>Size:</p>
+                    <input type="radio" id="small" name="size" value="Small"> <!--Taking input in form of radio buttons-->
+                    <label for="small">Small</label><br>
+                    <input type="radio" id="medium" name="size" value="Medium"> 
+                    <label for="medium">Medium</label><br>
+                    <input type="radio" id="large" name="size" value="Large">
+                    <label for="large">Large</label><br>
+                    <input type="radio" id="extralarge" name="size" value="Extra Large">
+                    <label for="extralarge">Extra Large</label>
+            </div>
+    
+            <div class="toppings"> <!--Creating a division for toppings-->
+                <div class="toppings">
+                    <p>Toppings: </p>
+                    <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni"> <!-- Taking input in form of checkboxes-->
+                    <label for="pepperoni">Pepper</label><br>
+                    <input type="checkbox" id="beef" name="beef" value="Beef">
+                    <label for="beef">Beef</label><br>
+                    <input type="checkbox" id="sausage" name="sausage" value="Sausage">
+                    <label for="sausage">Sausage</label><br>
+                    <input type="checkbox" id="chicken" name="chicken" value="Chicken">
+                    <label for="chicken">Chicken</label><br>
+                </div>
+            </div>
+    
+            <div class="Delivery"> <!--Creating a division for deliveries and related information-->
+
+                <div class="name"> <!--Creating a nested division for User Name-->
+                    <label>
+                        First Name<input type="text" id="FirstName" name="FirstName" required placeholder="Your First Name"> <!--Taking input in form of text boxes-->
+                    </label>
+                    <label>
+                        Last Name<input type="text" name="LastName" id="LastName" placeholder="Your Last Name">
+                    </label>
+                </div>
+    
+                <div class="address"> <!--Creating a nested division for address information-->
+                    <p>Please enter your address: </p>
+                    <label for="line1">Line 1</label>
+                    <input type="text" id="line1" name="line1" required placeholder="Address Line 1" size="50">
+                    <label for="line2">Line 2</label>
+                    <input type="text" id="line2" name="line2" required placeholder="Address Line 2" size="50">
+                </div>  
+    
+                <div class="instructions"> <!--Creating a nested division for special instructions-->
+                    <p>Special Delivery Instructions (if any)</p>
+                    <input type="text" id="instructions" name="instructions" required placeholder="Ex- Don't ring the bell." size="100">
+                </div>
+                
+            </div>
+    
+            <div class="email"> <!--Creating a division for contact information-->
+                <div class="email">
+                    <p>Please enter your e-mail and phone number to receive offers and discounts: </p>
+                    <input type="email" id="email" name="email" required placeholder="Your email here" pattern=".+@.+com" size="30">
+                </div>
+    
+                <div class="phone">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Your Phone Here" size="10">
+                </div>
+            </div>
+    
+            <footer> <!--Footer starts here-->
+                <a href="#">T&C</a>
+                <a href="#">Contact.Info</a>
+                <a href="#">Legal</a>
+            </footer>
+
+            <button id="orderButton" type="submit">Order</button>
+        </form> <!--Form Completed-->
+
+    </body>
+</html>
+<!--End of Code-->
